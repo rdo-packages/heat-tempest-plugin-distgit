@@ -124,3 +124,4 @@ rm -rf %{module}.egg-info
 %endif
 
 %changelog
+# REMOVEME: error caused by commit http://git.openstack.org/cgit/openstack/heat-tempest-plugin/commit/?id=8257d55634be0d5decf0827c6ddd50831210750f
