@@ -24,6 +24,9 @@ Source0:    http://tarballs.openstack.org/%{plugin}/%{plugin}-%{upstream_version
 
 BuildArch:  noarch
 
+BuildRequires:  git
+BuildRequires:  openstack-macros
+
 %description
 %{common_desc}
 
@@ -31,29 +34,28 @@ BuildArch:  noarch
 Summary: %{summary}
 %{?python_provide:%python_provide python2-%{service}-tests-tempest}
 BuildRequires:  python2-devel
-BuildRequires:  python-pbr
-BuildRequires:  python-setuptools
-BuildRequires:  git
-BuildRequires:  openstack-macros
+BuildRequires:  python2-pbr
+BuildRequires:  python2-setuptools
 
-Requires:   python-tempest >= 1:16.0.0
-Requires:   python-oslo-config
-Requires:   python-oslo-log
-Requires:   python-oslo-messaging
-Requires:   python-paramiko
-Requires:   python-eventlet
-Requires:   python-keystoneauth1
-Requires:   python-testtools
-Requires:   python-cinderclient
-Requires:   python-gnocchiclient
-Requires:   python-heatclient
-Requires:   python-neutronclient
-Requires:   python-novaclient
-Requires:   python-swiftclient
-Requires:   python-zaqarclient
-Requires:   python-testscenarios
-Requires:   python-gabbi
-Requires:   python-kombu
+Requires:   python2-tempest >= 1:17.2.0
+Requires:   python2-oslo-config >= 2:4.0.0
+Requires:   python2-oslo-log >= 3.30.0
+Requires:   python2-oslo-messaging >= 5.29.0
+Requires:   python2-paramiko >= 2.0.0
+Requires:   python2-eventlet
+Requires:   python2-keystoneauth1 >= 3.3.0
+Requires:   python2-testtools >= 2.2.0
+Requires:   python2-cinderclient >= 3.3.0
+Requires:   python2-gnocchiclient >= 3.3.1
+Requires:   python2-heatclient >= 1.10.0
+Requires:   python2-neutronclient >= 6.3.0
+Requires:   python2-novaclient >= 9.1.0
+Requires:   python2-swiftclient >= 3.2.0
+Requires:   python2-zaqarclient >= 1.0.0
+Requires:   python2-testscenarios >= 0.4
+Requires:   python2-gabbi >= 1.35.0
+Requires:   python2-kombu
+Requires:   python2-os-client-config >= 1.28.0
 
 %description -n python2-%{service}-tests-tempest
 %{common_desc}
@@ -66,24 +68,25 @@ BuildRequires:  python3-devel
 BuildRequires:  python3-pbr
 BuildRequires:  python3-setuptools
 
-Requires:   python3-tempest >= 1:16.0.0
-Requires:   python3-oslo-config
-Requires:   python3-oslo-log
-Requires:   python3-oslo-messaging
-Requires:   python3-paramiko
+Requires:   python3-tempest >= 1:17.2.0
+Requires:   python3-oslo-config >= 2:4.0.0
+Requires:   python3-oslo-log >= 3.30.0
+Requires:   python3-oslo-messaging >= 5.29.0
+Requires:   python3-paramiko >= 2.0.0
 Requires:   python3-eventlet
-Requires:   python3-keystoneauth1
-Requires:   python3-testtools
-Requires:   python3-cinderclient
-Requires:   python3-gnocchiclient
-Requires:   python3-heatclient
-Requires:   python3-neutronclient
-Requires:   python3-novaclient
-Requires:   python3-swiftclient
-Requires:   python3-zaqarclient
-Requires:   python3-testscenarios
-Requires:   python3-gabbi
+Requires:   python3-keystoneauth1 >= 3.3.0
+Requires:   python3-testtools >= 2.2.0
+Requires:   python3-cinderclient >= 3.3.0
+Requires:   python3-gnocchiclient >= 3.3.1
+Requires:   python3-heatclient >= 1.10.0
+Requires:   python3-neutronclient >= 6.3.0
+Requires:   python3-novaclient >= 9.1.0
+Requires:   python3-swiftclient >= 3.2.0
+Requires:   python3-zaqarclient >= 1.0.0
+Requires:   python3-testscenarios >= 0.4
+Requires:   python3-gabbi >= 1.35.0
 Requires:   python3-kombu
+Requires:   python3-os-client-config >= 1.28.0
 
 %description -n python3-%{service}-tests-tempest
 %{common_desc}
