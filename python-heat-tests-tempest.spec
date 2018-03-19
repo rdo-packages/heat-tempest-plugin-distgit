@@ -41,6 +41,8 @@ BuildRequires:  python2-devel
 BuildRequires:  python2-pbr
 BuildRequires:  python2-setuptools
 
+Obsoletes:   python-heat-tests < 10.0.0
+
 Requires:   python2-tempest >= 1:17.2.0
 Requires:   python2-oslo-config >= 2:4.0.0
 Requires:   python2-oslo-log >= 3.30.0
