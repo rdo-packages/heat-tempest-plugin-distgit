@@ -101,7 +101,7 @@ Requires:   python3-os-client-config >= 1.28.0
 %prep
 %autosetup -n %{plugin}-%{upstream_version} -S git
 
-# Let's handle dependencies ourseleves
+#  Let's handle dependencies ourseleves
 %py_req_cleanup
 # Remove bundled egg-info
 rm -rf %{module}.egg-info
