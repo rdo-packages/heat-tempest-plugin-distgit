@@ -59,7 +59,7 @@ Requires:   python2-novaclient >= 9.1.0
 Requires:   python2-swiftclient >= 3.2.0
 Requires:   python2-zaqarclient >= 1.0.0
 Requires:   python2-testscenarios >= 0.4
-Requires:   python2-gabbi >= 1.33.0
+Requires:   python2-gabbi >= 1.42.1
 Requires:   python2-kombu
 Requires:   python2-os-client-config >= 1.28.0
 
@@ -90,7 +90,7 @@ Requires:   python3-novaclient >= 9.1.0
 Requires:   python3-swiftclient >= 3.2.0
 Requires:   python3-zaqarclient >= 1.0.0
 Requires:   python3-testscenarios >= 0.4
-Requires:   python3-gabbi >= 1.33.0
+Requires:   python3-gabbi >= 1.42.1
 Requires:   python3-kombu
 Requires:   python3-os-client-config >= 1.28.0
 
