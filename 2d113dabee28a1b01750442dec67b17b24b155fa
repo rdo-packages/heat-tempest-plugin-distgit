@@ -22,6 +22,30 @@
       "revId": "2d113dabee28a1b01750442dec67b17b24b155fa",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9abe1de1_c05e0f76",
+        "filename": "python-heat-tests-tempest.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 89,
+      "author": {
+        "id": 415
+      },
+      "writtenOn": "2018-07-31T08:02:11Z",
+      "side": 1,
+      "message": "Sure, I did not realize that we\u0027ve python3 stuff in it.",
+      "parentUuid": "9abe1de1_60774303",
+      "range": {
+        "startLine": 89,
+        "startChar": 28,
+        "endLine": 89,
+        "endChar": 35
+      },
+      "revId": "2d113dabee28a1b01750442dec67b17b24b155fa",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
     }
   ]
 }
