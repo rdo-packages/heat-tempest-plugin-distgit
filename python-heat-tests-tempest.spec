@@ -39,25 +39,25 @@ BuildRequires:  python2-setuptools
 
 Obsoletes:   python-heat-tests < 1:10.0.0
 
-Requires:   python2-tempest >= 1:17.2.0
-Requires:   python2-oslo-config >= 2:4.0.0
-Requires:   python2-oslo-log >= 3.30.0
-Requires:   python2-oslo-messaging >= 5.29.0
+Requires:   python2-tempest >= 1:18.0.0
+Requires:   python2-oslo-config >= 2:5.2.0
+Requires:   python2-oslo-log >= 3.36.0
+Requires:   python2-oslo-messaging >= 5.35.0
 Requires:   python2-paramiko >= 2.0.0
 Requires:   python2-eventlet
-Requires:   python2-keystoneauth1 >= 3.3.0
+Requires:   python2-keystoneauth1 >= 3.4.0
 Requires:   python2-testtools >= 1.8.0
-Requires:   python2-cinderclient >= 3.3.0
-Requires:   python2-gnocchiclient >= 3.3.1
-Requires:   python2-heatclient >= 1.10.0
-Requires:   python2-neutronclient >= 6.3.0
-Requires:   python2-novaclient >= 9.1.0
-Requires:   python2-swiftclient >= 3.2.0
-Requires:   python2-zaqarclient >= 1.0.0
-Requires:   python2-testscenarios >= 0.4
+Requires:   python2-cinderclient >= 3.5.0
+Requires:   python2-gnocchiclient >= 7.0.1
+Requires:   python2-heatclient >= 1.14.0
+Requires:   python2-neutronclient >= 6.7.0
+Requires:   python2-novaclient >= 10.1.0
+Requires:   python2-swiftclient >= 3.5.0
+Requires:   python2-zaqarclient >= 1.9.0
+Requires:   python2-testscenarios >= 0.5.0
 Requires:   python2-gabbi >= 1.42.1
 Requires:   python2-kombu
-Requires:   python2-os-client-config >= 1.28.0
+Requires:   python2-os-client-config >= 1.29.0
 
 %description -n python2-%{service}-tests-tempest
 %{common_desc}
@@ -70,25 +70,25 @@ BuildRequires:  python3-devel
 BuildRequires:  python3-pbr
 BuildRequires:  python3-setuptools
 
-Requires:   python3-tempest >= 1:17.2.0
-Requires:   python3-oslo-config >= 2:4.0.0
-Requires:   python3-oslo-log >= 3.30.0
-Requires:   python3-oslo-messaging >= 5.29.0
+Requires:   python3-tempest >= 1:18.0.0
+Requires:   python3-oslo-config >= 2:5.2.0
+Requires:   python3-oslo-log >= 3.36.0
+Requires:   python3-oslo-messaging >= 5.35.0
 Requires:   python3-paramiko >= 2.0.0
 Requires:   python3-eventlet
-Requires:   python3-keystoneauth1 >= 3.3.0
+Requires:   python3-keystoneauth1 >= 3.4.0
 Requires:   python3-testtools >= 1.8.0
-Requires:   python3-cinderclient >= 3.3.0
-Requires:   python3-gnocchiclient >= 3.3.1
-Requires:   python3-heatclient >= 1.10.0
-Requires:   python3-neutronclient >= 6.3.0
-Requires:   python3-novaclient >= 9.1.0
-Requires:   python3-swiftclient >= 3.2.0
-Requires:   python3-zaqarclient >= 1.0.0
-Requires:   python3-testscenarios >= 0.4
+Requires:   python3-cinderclient >= 3.5.0
+Requires:   python3-gnocchiclient >= 7.0.1
+Requires:   python3-heatclient >= 1.14.0
+Requires:   python3-neutronclient >= 6.7.0
+Requires:   python3-novaclient >= 10.1.0
+Requires:   python3-swiftclient >= 3.5.0
+Requires:   python3-zaqarclient >= 1.9.0
+Requires:   python3-testscenarios >= 0.5.0
 Requires:   python3-gabbi >= 1.42.1
 Requires:   python3-kombu
-Requires:   python3-os-client-config >= 1.28.0
+Requires:   python3-os-client-config >= 1.29.0
 
 %description -n python3-%{service}-tests-tempest
 %{common_desc}
