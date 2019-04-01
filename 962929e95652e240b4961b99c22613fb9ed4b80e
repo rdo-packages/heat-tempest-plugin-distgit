@@ -1,0 +1,9 @@
+Code-Review+2: Yatin Karel <ykarel@redhat.com>
+Code-Review+2: Chandan Kumar <chkumar246@gmail.com>
+Workflow+1: Chandan Kumar <chkumar246@gmail.com>
+Verified+2: Zuul CI <zuul@review.rdoproject.org>
+Submitted-by: Zuul CI <zuul@review.rdoproject.org>
+Submitted-at: Mon, 01 Apr 2019 13:02:11 +0000
+Reviewed-on: https://review.rdoproject.org/r/19862
+Project: openstack/heat-tempest-plugin-distgit
+Branch: refs/heads/rpm-master
