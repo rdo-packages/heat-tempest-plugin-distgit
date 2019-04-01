@@ -65,7 +65,7 @@ Requires:   python%{pyver}-testscenarios >= 0.5.0
 Requires:   python%{pyver}-gabbi >= 1.42.1
 Requires:   python%{pyver}-kombu
 Requires:   python%{pyver}-os-client-config >= 1.29.0
-
+Requires:   os-collect-config >= 5.0.0
 %description -n python%{pyver}-%{service}-tests-tempest
 %{common_desc}
 
