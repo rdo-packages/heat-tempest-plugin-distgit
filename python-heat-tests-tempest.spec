@@ -53,7 +53,7 @@ Requires:   python%{pyver}-oslo-messaging >= 5.35.0
 Requires:   python%{pyver}-paramiko >= 2.0.0
 Requires:   python%{pyver}-eventlet
 Requires:   python%{pyver}-keystoneauth1 >= 3.4.0
-Requires:   python%{pyver}-testtools >= 1.8.0
+Requires:   python%{pyver}-testtools >= 2.2.0
 Requires:   python%{pyver}-cinderclient >= 3.5.0
 Requires:   python%{pyver}-gnocchiclient >= 7.0.1
 Requires:   python%{pyver}-heatclient >= 1.14.0
@@ -65,7 +65,7 @@ Requires:   python%{pyver}-testscenarios >= 0.5.0
 Requires:   python%{pyver}-gabbi >= 1.42.1
 Requires:   python%{pyver}-kombu
 Requires:   python%{pyver}-os-client-config >= 1.29.0
-
+Requires:   os-collect-config >= 5.0.0
 %description -n python%{pyver}-%{service}-tests-tempest
 %{common_desc}
 
