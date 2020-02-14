@@ -90,4 +90,3 @@ rm -rf %{module}.egg-info
 %{pyver_sitelib}/*.egg-info
 
 %changelog
-
