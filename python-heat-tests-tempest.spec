@@ -1,14 +1,3 @@
-# Macros for py2/py3 compatibility
-%if 0%{?fedora} || 0%{?rhel} > 7
-%global pyver %{python3_pkgversion}
-%else
-%global pyver 2
-%endif
-%global pyver_bin python%{pyver}
-%global pyver_sitelib %python%{pyver}_sitelib
-%global pyver_install %py%{pyver}_install
-%global pyver_build %py%{pyver}_build
-# End of macros for py2/py3 compatibility
 %global service heat
 %global plugin heat-tempest-plugin
 %global module heat_tempest_plugin
@@ -37,36 +26,36 @@ BuildRequires:  openstack-macros
 %description
 %{common_desc}
 
-%package -n python%{pyver}-%{service}-tests-tempest
+%package -n python3-%{service}-tests-tempest
 Summary: %{summary}
-%{?python_provide:%python_provide python%{pyver}-%{service}-tests-tempest}
-BuildRequires:  python%{pyver}-devel
-BuildRequires:  python%{pyver}-pbr
-BuildRequires:  python%{pyver}-setuptools
+%{?python_provide:%python_provide python3-%{service}-tests-tempest}
+BuildRequires:  python3-devel
+BuildRequires:  python3-pbr
+BuildRequires:  python3-setuptools
 
 Obsoletes:   python-heat-tests < 1:10.0.0
 
-Requires:   python%{pyver}-tempest >= 1:18.0.0
-Requires:   python%{pyver}-oslo-config >= 2:5.2.0
-Requires:   python%{pyver}-oslo-log >= 3.36.0
-Requires:   python%{pyver}-oslo-messaging >= 5.35.0
-Requires:   python%{pyver}-paramiko >= 2.0.0
-Requires:   python%{pyver}-eventlet
-Requires:   python%{pyver}-keystoneauth1 >= 3.4.0
-Requires:   python%{pyver}-testtools >= 1.8.0
-Requires:   python%{pyver}-cinderclient >= 3.5.0
-Requires:   python%{pyver}-gnocchiclient >= 7.0.1
-Requires:   python%{pyver}-heatclient >= 1.14.0
-Requires:   python%{pyver}-neutronclient >= 6.7.0
-Requires:   python%{pyver}-novaclient >= 10.1.0
-Requires:   python%{pyver}-swiftclient >= 3.5.0
-Requires:   python%{pyver}-zaqarclient >= 1.9.0
-Requires:   python%{pyver}-testscenarios >= 0.5.0
-Requires:   python%{pyver}-gabbi >= 1.42.1
-Requires:   python%{pyver}-kombu
-Requires:   python%{pyver}-os-client-config >= 1.29.0
+Requires:   python3-tempest >= 1:18.0.0
+Requires:   python3-oslo-config >= 2:5.2.0
+Requires:   python3-oslo-log >= 3.36.0
+Requires:   python3-oslo-messaging >= 5.35.0
+Requires:   python3-paramiko >= 2.0.0
+Requires:   python3-eventlet
+Requires:   python3-keystoneauth1 >= 3.4.0
+Requires:   python3-testtools >= 2.2.0
+Requires:   python3-cinderclient >= 3.5.0
+Requires:   python3-gnocchiclient >= 7.0.1
+Requires:   python3-heatclient >= 1.14.0
+Requires:   python3-neutronclient >= 6.7.0
+Requires:   python3-novaclient >= 10.1.0
+Requires:   python3-swiftclient >= 3.5.0
+Requires:   python3-zaqarclient >= 1.9.0
+Requires:   python3-testscenarios >= 0.5.0
+Requires:   python3-gabbi >= 1.42.1
+Requires:   python3-kombu
+Requires:   python3-os-client-config >= 1.29.0
 Requires:   os-collect-config >= 5.0.0
-%description -n python%{pyver}-%{service}-tests-tempest
+%description -n python3-%{service}-tests-tempest
 %{common_desc}
 
 %prep
@@ -78,15 +67,15 @@ Requires:   os-collect-config >= 5.0.0
 rm -rf %{module}.egg-info
 
 %build
-%{pyver_build}
+%{py3_build}
 
 %install
-%{pyver_install}
+%{py3_install}
 
-%files -n python%{pyver}-%{service}-tests-tempest
+%files -n python3-%{service}-tests-tempest
 %license LICENSE
 %doc README.rst
-%{pyver_sitelib}/%{module}
-%{pyver_sitelib}/*.egg-info
+%{python3_sitelib}/%{module}
+%{python3_sitelib}/*.egg-info
 
 %changelog
