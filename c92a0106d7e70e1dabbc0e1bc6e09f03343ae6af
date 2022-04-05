@@ -16,6 +16,23 @@
       "message": "needs os-collect-config",
       "revId": "c92a0106d7e70e1dabbc0e1bc6e09f03343ae6af",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "06ce0f8d_9e845ec0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 757
+      },
+      "writtenOn": "2022-04-05T10:01:04Z",
+      "side": 1,
+      "message": "recheck",
+      "revId": "c92a0106d7e70e1dabbc0e1bc6e09f03343ae6af",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
     }
   ]
 }
