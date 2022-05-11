@@ -1,5 +1,5 @@
 %{!?sources_gpg: %{!?dlrn:%global sources_gpg 1} }
-%global sources_gpg_sign 0x5d2d1e4fb8d38e6af76c50d53d4fec30cf5ce3da
+%global sources_gpg_sign 0x01527a34f0d0080f8a5db8d6eb6c5df21b4b6363
 %global service heat
 %global plugin heat-tempest-plugin
 %global module heat_tempest_plugin
@@ -12,7 +12,7 @@ Additionally it provides a plugin to automatically load these \
 tests into Tempest.
 
 Name:       python-%{service}-tests-tempest
-Version:    1.2.0
+Version:    1.5.0
 Release:    1%{?dist}
 Summary:    Tempest Integration of Heat Project
 License:    ASL 2.0
@@ -95,6 +95,9 @@ rm -rf %{module}.egg-info
 %{python3_sitelib}/*.egg-info
 
 %changelog
+* Wed May 11 2022 RDO <dev@lists.rdoproject.org> 1.5.0-1
+- Update to 1.5.0
+
 * Tue Mar 30 2021 RDO <dev@lists.rdoproject.org> 1.2.0-1
 - Update to 1.2.0
 
