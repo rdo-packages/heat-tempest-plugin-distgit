@@ -1,5 +1,5 @@
 %{!?sources_gpg: %{!?dlrn:%global sources_gpg 1} }
-%global sources_gpg_sign 0x2426b928085a020d8a90d0d879ab7008d0896c8a
+%global sources_gpg_sign 0x815AFEC729392386480E076DCC0DFE2D21C023C9
 %global service heat
 %global plugin heat-tempest-plugin
 %global module heat_tempest_plugin
@@ -12,8 +12,8 @@ Additionally it provides a plugin to automatically load these \
 tests into Tempest.
 
 Name:       python-%{service}-tests-tempest
-Version:    XXX
-Release:    XXX
+Version:    2.0.0
+Release:    1%{?dist}
 Summary:    Tempest Integration of Heat Project
 License:    Apache-2.0
 URL:        https://git.openstack.org/cgit/openstack/%{plugin}/
@@ -69,3 +69,6 @@ BuildRequires:  pyproject-rpm-macros
 %{python3_sitelib}/*.dist-info
 
 %changelog
+* Wed Oct 04 2023 RDO <dev@lists.rdoproject.org> 2.0.0-1
+- Update to 2.0.0
+
