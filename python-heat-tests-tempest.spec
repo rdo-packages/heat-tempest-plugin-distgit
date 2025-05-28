@@ -71,3 +71,4 @@ BuildRequires:  pyproject-rpm-macros
 %{python3_sitelib}/*.dist-info
 
 %changelog
+# REMOVEME: error caused by commit https://opendev.org/openstack/heat-tempest-plugin/commit/ef7a07e6988c2688d0f9fd21ab9c0907ea55e975
